@@ -3,7 +3,7 @@ opt = vim.opt
 -- Rutas
 
 require('plugins')
-
+require('config.lualine')
 
 
 --  Opciones
