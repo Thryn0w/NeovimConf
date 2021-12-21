@@ -23,4 +23,4 @@ map('n', '<F2>', ':w !python<CR>', opts)
 -- NvimTree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 map('n', 'r', ':NvimTreeRefresh<CR>', opts)
-map('n', 'n', ':NvimTreeFindFile', opts)
+map('n', 'n', ':NvimTreeFindFile<CR>', opts)
