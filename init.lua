@@ -5,7 +5,8 @@ cmd = vim.cmd
 require('config.lualine')
 require('atajos')
 require('plugins')
-require('colors')
+require('themes.colors')
+require('themes.evil_lualine')
 require('config.nvimtree')
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
 
