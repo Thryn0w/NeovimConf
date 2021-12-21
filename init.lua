@@ -1,16 +1,18 @@
 opt = vim.opt
+cmd = vim.cmd
 
 -- Rutas
 require('config.lualine')
 require('atajos')
 require('plugins')
 require('colors')
-vim.cmd('source ~/.config/nvim/lua/config/coc.vim') 
+require('config.nvimtree')
+cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
 
 --  Opciones
 
-opt.fileencoding  = "utf-8"
-vim.opt.completeopt = "menuone,noselect,menu"   --
+opt.fileencoding  = "utf-8"                     --
+opt.completeopt = "menuone,noselect,menu"       --
 opt.number        = true                        --
 opt.cursorline    = true                        --
 opt.autoindent    = true                        --

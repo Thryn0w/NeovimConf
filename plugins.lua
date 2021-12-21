@@ -16,8 +16,7 @@ return require('packer').startup(function()
   -- Bufferline
   use 'akinsho/bufferline.nvim'
 
-  use 'kyazdani42/nvim-tree.lua'
-
+  use {'kyazdani42/nvim-tree.lua',config = function() require'nvim-tree'.setup {} end}
 end)
 
 

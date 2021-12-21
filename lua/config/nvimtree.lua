@@ -1,5 +1,10 @@
--- following options are the default
--- each of these are documented in `:help nvim-tree.OPTION_NAME`
+g = vim.g
+
+g.nvim_tree_indent_markers = 1
+g.nvim_tree_root_folder_modifier = ':e'
+g.nvim_tree_quit_on_open = 1
+g.nvim_tree_highlight_opened_files = 1
+
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
@@ -7,9 +12,10 @@ require'nvim-tree'.setup {
   ignore_ft_on_setup  = {},
   auto_close          = true,
   open_on_tab         = false,
-  hijack_cursor       = false,
-  update_cwd          = false,
-  update_to_buf_dir   = {
+  hijack_cursor       = true,
+  update_cwd          = true,
+
+  update_to_buf_dir = {
     enable = true,
     auto_open = true,
   },
@@ -57,12 +63,14 @@ require'nvim-tree'.setup {
   trash = {
     cmd = "trash",
     require_confirm = true
-  }
+  },
 }
 
 
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
+
 -- default mappings
+
 local list = {
   { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
   { key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
@@ -98,3 +106,4 @@ local list = {
   { key = "q",                            cb = tree_cb("close") },
   { key = "g?",                           cb = tree_cb("toggle_help") },
 }
+
