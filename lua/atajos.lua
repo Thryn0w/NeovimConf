@@ -18,14 +18,13 @@ map('i', 'kj', '<ESC>', opts)
 --map('n', '<Space>', ':Telescope find_files<CR>', opts)
 
 -- Ejecutar python
-map('n', '<F2>', ':w !python<CR>', opts)
+map('n', '<F2>', ':w !python3<CR>', opts)
 
 -- NvimTree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
-map('n', 'r', ':NvimTreeRefresh<CR>', opts)
-map('n', 'n', ':NvimTreeFindFile<CR>', opts)
 
 -- Bufferline
 
 map('n', '<TAB>', ':BufferLineCycleNext<CR>', opts)
 map('n', '<s-TAB>', ':BufferLineCyclePrev<CR>', opts)
+map('n', '<s-q>', ':BufferLineCloseRight<CR>', opts)

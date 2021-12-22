@@ -10,7 +10,6 @@ return require('packer').startup(function()
   -- Aesthetic
   use 'akinsho/bufferline.nvim'
   use 'kyazdani42/nvim-tree.lua'
-  use 'glepnir/dashboard-nvim'
   use 'kyazdani42/nvim-web-devicons'
   use'nvim-lualine/lualine.nvim'
 
