@@ -8,10 +8,10 @@ require('plugins')
 require('themes.colors')
 require('themes.evil_lualine')
 require('config.nvimtree')
+require('config.dashboard')
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
 
 --  Opciones
-
 opt.fileencoding  = "utf-8"                     --
 opt.completeopt = "menuone,noselect,menu"       --
 opt.number        = true                        --
