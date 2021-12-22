@@ -16,6 +16,7 @@ return require('packer').startup(function()
 
   -- Autocomplete Coc
   use {'neoclide/coc.nvim', branch = 'release'}
+
 end)
 
 

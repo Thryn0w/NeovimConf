@@ -1,5 +1,5 @@
 map = vim.api.nvim_set_keymap
-opts = {noremap = true}
+opts = {noremap = true, silent = true}
 
 -- Save File
 map('i', '<c-s>', '<ESC>:w<CR>', opts)
@@ -8,7 +8,7 @@ map('n', 'ss', ':w<CR>', opts)
 
 -- Close Neovim/Files
 map('n', 'qq', ':q!<CR>', opts)
-map('n', '<c-q>', ':q<CR>', opts)
+map('n', '<c-q>', ':q!<CR>', opts)
 
 -- Return normal mode
 map('i', 'jk', '<ESC>', opts)
@@ -24,3 +24,8 @@ map('n', '<F2>', ':w !python<CR>', opts)
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 map('n', 'r', ':NvimTreeRefresh<CR>', opts)
 map('n', 'n', ':NvimTreeFindFile<CR>', opts)
+
+-- Bufferline
+
+map('n', '<TAB>', ':BufferLineCycleNext<CR>', opts)
+map('n', '<s-TAB>', ':BufferLineCyclePrev<CR>', opts)
