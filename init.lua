@@ -8,6 +8,7 @@ require('plugins')
 require('config.nvimtree')
 require('config.dashboard')
 require('config.bufferline')
+require('config.comment')
 require('themes.colors')
 require('themes.evil_lualine')
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
