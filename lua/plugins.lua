@@ -11,7 +11,8 @@ return require('packer').startup(function()
   use 'akinsho/bufferline.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
-  use'nvim-lualine/lualine.nvim'
+  use 'nvim-lualine/lualine.nvim'
+  use 'nvim-treesitter/nvim-treesitter'
 
   -- Autocomplete Coc
   use {'neoclide/coc.nvim', branch = 'release'}
