@@ -13,11 +13,15 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'windwp/nvim-ts-autotag'
+  use 'andweeb/presence.nvim'
 
   -- Autocomplete Coc
   use {'neoclide/coc.nvim', branch = 'release'}
 
+  -- Comments
   use 'numToStr/Comment.nvim'
+
 
 end)
 
