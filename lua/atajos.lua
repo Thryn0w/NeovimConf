@@ -23,6 +23,10 @@ map('n', '<F2>', ':w !python3<CR>', opts)
 -- NvimTree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 
+-- Toggleterm
+
+map('n', '<s-t>', ':ToggleTerm<CR>', opts)
+
 -- Bufferline
 
 map('n', '<TAB>', ':BufferLineCycleNext<CR>', opts)

@@ -11,6 +11,7 @@ require('config.comment')
 require('config.treesitter')
 require('themes.colors')
 require('themes.evil_lualine')
+require('config.toggleterm')
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
 
 --  Opciones

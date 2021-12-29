@@ -22,7 +22,8 @@ return require('packer').startup(function()
   -- Comments
   use 'numToStr/Comment.nvim'
 
-
+  -- Toggleterm
+  use {"akinsho/toggleterm.nvim"}
 end)
 
 
