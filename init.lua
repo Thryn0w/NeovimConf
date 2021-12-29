@@ -16,6 +16,8 @@ require('config.bufferline')
 require('config.comment')
 require('config.treesitter')
 require('config.toggleterm')
+require('config.telescope')
+require('config.dashboard')
 
 -- Autocomplete
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion

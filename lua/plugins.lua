@@ -15,6 +15,11 @@ return require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-ts-autotag'
   use 'andweeb/presence.nvim'
+  use 'glepnir/dashboard-nvim'
+
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'BurntSushi/ripgrep'
 
   -- Autocomplete Coc
   use {'neoclide/coc.nvim', branch = 'release'}

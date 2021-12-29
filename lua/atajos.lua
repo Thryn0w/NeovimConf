@@ -15,7 +15,7 @@ map('i', 'jk', '<ESC>', opts)
 map('i', 'kj', '<ESC>', opts)
 
 --Nav of files in Telescope
---map('n', '<Space>', ':Telescope find_files<CR>', opts)
+map('n', '<Space>', ':Telescope find_files<CR>', opts)
 
 -- Ejecutar python
 map('n', '<F2>', ':w !python3<CR>', opts)
