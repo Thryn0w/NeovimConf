@@ -34,7 +34,7 @@ opt.signcolumn    = "yes"                       --
 opt.wrap          = false                       --
 opt.autoread       = true                       --
 opt.shortmess:append("c")                       --
-opt.termguicolors = true
+opt.termguicolors = true                        --
 
 -- Tabs
 opt.expandtab     = true                        --
