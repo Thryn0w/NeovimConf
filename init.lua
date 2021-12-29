@@ -2,16 +2,22 @@ opt = vim.opt
 cmd = vim.cmd
 
 -- Rutas
-require('config.lualine')
 require('atajos')
 require('plugins')
+
+-- themes
+require('themes.evil_lualine')
+require('themes.colors')
+
+-- Plugins
+require('config.lualine')
 require('config.nvimtree')
 require('config.bufferline')
 require('config.comment')
 require('config.treesitter')
-require('themes.colors')
-require('themes.evil_lualine')
 require('config.toggleterm')
+
+-- Autocomplete
 cmd('source ~/.config/nvim/lua/config/coc.vim')  -- Conquer of Completion
 
 --  Opciones
