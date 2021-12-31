@@ -32,3 +32,7 @@ map('n', '<s-t>', ':ToggleTerm<CR>', opts)
 map('n', '<TAB>', ':BufferLineCycleNext<CR>', opts)
 map('n', '<s-TAB>', ':BufferLineCyclePrev<CR>', opts)
 map('n', '<s-q>', ':BufferLineCloseRight<CR>', opts)
+
+
+-- Bufferline: BufferLineGoToBuffer
+map('n', '<s-1>', 'BufferLineGoToBuffer 1<CR>', opts)

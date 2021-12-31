@@ -6,11 +6,10 @@ require('atajos')
 require('plugins')
 
 -- themes
-require('themes.evil_lualine')
 require('themes.colors')
+require('themes.lualine')
 
 -- Plugins
-require('config.lualine')
 require('config.nvimtree')
 require('config.bufferline')
 require('config.comment')
